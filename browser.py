@@ -2,7 +2,7 @@ import webbrowser
 from termcolor import colored
 import cmd_fonction as cmdf
 def execute(arg:list):
-    browser=rep[8::]
+    browser=arg[0]
     if type(browser)==str:
         if cmdf.connect()==True:
             webbrowser.open(browser)
