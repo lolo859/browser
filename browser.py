@@ -1,10 +1,10 @@
 import webbrowser
 from termcolor import colored
-import cmd_fonction as cmdf
+import system.shellter_main
 def execute(arg:list):
     browser=arg[0]
     if type(browser)==str:
-        if cmdf.connect()==True:
+        if system.shellter_main.connectt()==True:
             webbrowser.open(browser)
         else:
             print(colored("Vous devez connecté à internet pour utiliser ce module","red"))
